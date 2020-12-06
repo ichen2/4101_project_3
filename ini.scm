@@ -203,8 +203,11 @@
 (define (rational? arg)
         (if (s48-number? arg) 
                 #t 
-                (if (eq? 'rational (car arg)) 
-                        #t
+                (if (pair? arg)
+                        (if (eq? 'rational (car arg)) 
+                                #t
+                                #f
+                        )
                         #f
                 )
         )
