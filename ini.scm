@@ -185,11 +185,14 @@
 )
 
 (define (b+ x y)
-  (if (s48-integer? x)
-      (if (s48-integer? y)
-	  (s48-+ x y)
-	  (type-error "arguments of b+ are not integers" 0))
-      (type-error "arguments of b+ are not integers" 0))) 
+        (if (s48-integer? x)
+                (if (s48-integer? y)
+	                (s48-+ x y)
+	                (type-error "arguments of b+ are not integers" 0)
+                )
+                (type-error "arguments of b+ are not integers" 0)
+        )
+) 
 
 (define s48-number? number?)
 
@@ -317,4 +320,23 @@
                         )
                 )
         )       
+)
+
+(define (b= x y)
+        (let ((x (simplify x)) (y (simplify  y)))
+                (if (and (s48-integer? x) (s48-integer? y))
+                        (s48-= x y) 
+                        (if (or (s48-integer? x) (s48-integer? y))
+                                #f
+                                (if (and (rational? x) (rational? y))
+                                        (r= x y)
+                                        (type-error "arguments of b= are not numbers" #f)
+                                )
+                        )
+                )
+        )
+)
+
+(define (r= x y) 
+        (and (b= (num x) (num y)) (b= (den x) (den y)))
 )
