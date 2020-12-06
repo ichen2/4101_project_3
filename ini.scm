@@ -343,3 +343,13 @@
 (define (r= x y) 
         (and (b= (num x) (num y)) (b= (den x) (den y)))
 )
+
+(define (equal? a b)
+        (cond 
+                ((eqv? a b)
+                        #t)
+                ((and (pair? a) (pair? b))
+                        (and (equal? (car a) (car b)) (equal? (cdr a) (cdr b))))
+                (else #f)
+        )
+)
