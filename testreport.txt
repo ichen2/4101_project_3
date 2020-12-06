@@ -1,0 +1,7 @@
+/mnt/c/Program Files (x86)/Scheme 48/Scheme 48 1.9/scheme48.bat: line 1: @C:\Program Files (x86)\Scheme 48\Scheme 48 1.9\scheme48vm.exe: command not found
+/mnt/c/Program Files (x86)/Scheme 48/Scheme 48 1.9/scheme48.bat: line 1: @C:\Program Files (x86)\Scheme 48\Scheme 48 1.9\scheme48vm.exe: command not found
+/mnt/c/Program Files (x86)/Scheme 48/Scheme 48 1.9/scheme48.bat: line 1: @C:\Program Files (x86)\Scheme 48\Scheme 48 1.9\scheme48vm.exe: command not found
+/mnt/c/Program Files (x86)/Scheme 48/Scheme 48 1.9/scheme48.bat: line 1: @C:\Program Files (x86)\Scheme 48\Scheme 48 1.9\scheme48vm.exe: command not found
+/mnt/c/Program Files (x86)/Scheme 48/Scheme 48 1.9/scheme48.bat: line 1: @C:\Program Files (x86)\Scheme 48\Scheme 48 1.9\scheme48vm.exe: command not found
+/mnt/c/Program Files (x86)/Scheme 48/Scheme 48 1.9/scheme48.bat: line 1: @C:\Program Files (x86)\Scheme 48\Scheme 48 1.9\scheme48vm.exe: command not found
+/mnt/c/Program Files (x86)/Scheme 48/Scheme 48 1.9/scheme48.bat: line 1: @C:\Program Files (x86)\Scheme 48\Scheme 48 1.9\scheme48vm.exe: command not found
