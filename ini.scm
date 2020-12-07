@@ -353,3 +353,39 @@
                 (else #f)
         )
 )
+
+(define (w x)
+        (begin
+                (display "(")
+                (wr x)
+        )
+)
+
+(define (wr x)
+        (if (null? x)
+                (display ")")
+                (if (list? x) 
+                        (if (rational? x)
+                                (begin
+                                        (write (numerator x))
+                                        (display "/")
+                                        (write (denominator x))
+                                )
+                                (begin
+                                        (if (and (pair? (car x)) (not (rational? (car x))))
+                                                (display "(")
+                                        )
+                                        (wr (car x))
+                                        (if (not (null? (cdr x)))
+                                                (display " ")
+                                        )
+                                        (wr (cdr x))
+                                )
+                        )
+                        (begin
+                                (write x)
+                        )
+                                
+                )
+        )
+)
